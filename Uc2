@@ -6,9 +6,9 @@ package pincode;
 	public class Pincode {
 		public static boolean isValid(String pincode) {
 
-		      String ZIP = "[1-9]{1}[0-9]{5}";
+		      String CODE = "[1-9]{1}[0-9]{5}";
 
-		      Pattern p = Pattern.compile(ZIP);
+		      Pattern p = Pattern.compile(CODE);
 
 		      if (pincode == null){
 		         return false;
