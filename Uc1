@@ -1,0 +1,25 @@
+package pincode;
+	
+	import java.util.regex.Pattern;
+	import java.util.regex.Matcher;
+	
+	public class Pincode {
+	    public static boolean isValid(String pincode) {
+
+	      String CODE = "[1-9]{1}[0-9]{5}";
+
+	      Pattern p = Pattern.compile(CODE);
+
+	      if (pincode == null){
+	         return false;
+	      }
+
+	      Matcher m = p.matcher(pincode);
+	      return m.matches();
+	      }
+
+    	   public static void main(String args[]){
+	      String Pincode1 ="400708";
+	      System.out.println( Pincode1 +":" +isValid(Pincode1));
+	      }
+}
